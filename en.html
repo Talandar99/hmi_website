@@ -22,13 +22,49 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			body {
-				background-image: url('images/tło/bg-main.png');
-				background-size: contain;
-				background-position: center;
-				background-attachment: fixed;
-				background-repeat: no-repeat;
-			}
+			body{
+	background-image: url('images/tło/bg-main.png');
+	
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	background-size: cover;
+	background-position: right center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+			
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	background-size: cover;
+	background-position: right center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+}
 			.center {
 			display: block;
 			  margin-left: auto;
@@ -61,8 +97,39 @@
 							</ul>
 						</nav>
 					</header>
-<div class="napis"><a href="index.html"><img src="https://flagcdn.com/w40/pl.png" alt="Polska flaga" style="width: 20px; height: auto; vertical-align: middle; margin-right: 5px;">POLSKI</a></div>
-				<!-- Main -->
+<div class="napis">
+  <a href="index.html" class="flaga-link">
+    <img src="https://flagcdn.com/w40/pl.png" alt="Polska flaga" class="flaga">
+    <span class="tekst">POLSKI</span>
+  </a>
+</div>
+
+<style>
+.napis {
+  display: inline-block;
+}
+
+.flaga-link {
+  display: flex;
+  align-items: center; /* wyśrodkowanie w osi Y */
+  text-decoration: none;
+  color: black;
+}
+
+.flaga {
+  width: 40px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.tekst {
+  font-size: 16px;
+  line-height: 1;
+  color:white;
+}
+</style>
+
+	<!-- Main -->
 					<div id="main">
 
 			<!-- Karta Social Media -->

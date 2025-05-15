@@ -22,13 +22,49 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			body {
-				background-image: url('images/tło/bg-main.png');
-				background-size: contain;
-				background-position: center;
-				background-attachment: fixed;
-				background-repeat: no-repeat;
-			}
+			body{
+	background-image: url('images/tło/bg-main.png');
+	
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	background-size: cover;
+	background-position: right center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+			
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	background-size: cover;
+	background-position: right center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+}
 			.center {
 			display: block;
 			  margin-left: auto;
@@ -77,6 +113,9 @@
 			margin-bottom: 1px;
 			margin: auto;
 			object-fit: scale-down;
+			position: relative;
+            overflow: hidden;
+
 		  }
 	</style> 
 	

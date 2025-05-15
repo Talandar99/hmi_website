@@ -22,13 +22,49 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			body {
-				background-image: url('images/tło/bg-main.png');
-				background-size: contain;
-				background-position: center;
-				background-attachment: fixed;
-				background-repeat: no-repeat;
-			}
+body{
+	background-image: url('images/tło/bg-main.png');
+	
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	background-size: cover;
+	background-position: right center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+			
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	background-size: cover;
+	background-position: right center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+}
 			.center {
 			display: block;
 			  margin-left: auto;
@@ -68,8 +104,40 @@
 							</ul>
 						</nav>
 					</header>
-<div class="napis"><a href="en.html"><img src="https://flagcdn.com/w40/gb.png" alt="Polska flaga" style="width: 20px; height: auto; vertical-align: middle; margin-right: 5px;">ENGLISH</a></div>
-				<!-- Main -->
+
+<div class="napis">
+  <a href="en.html" class="flaga-link">
+    <img src="https://flagcdn.com/w40/gb.png" alt="UK flag" class="flaga">
+    <span class="tekst">ENGLISH</span>
+  </a>
+</div>
+
+<style>
+.napis {
+  display: inline-block;
+}
+
+.flaga-link {
+  display: flex;
+  align-items: center; /* wyśrodkowanie w osi Y */
+  text-decoration: none;
+  color: black;
+}
+
+.flaga {
+  width: 40px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.tekst {
+  font-size: 16px;
+  line-height: 1;
+  color:white;
+}
+</style>
+
+	<!-- Main -->
 					<div id="main">
 
 			<!-- Karta Social Media -->
@@ -235,15 +303,31 @@
             height: 100%;
             position: absolute;
         }
+		img{
+			width: 100%; 
+            height: 100%;
+            object-fit: contain;
+			position: relative;
+            overflow: hidden;
+            display: flex;
+		} 
     </style>
 			<!-- Karta Spotkania/Wydarzenia -->
-			<br>	
-			
+			<br>
+
+			<h3><i><u>17.05.2025r.</u></i></h3>
+			<p>Już za tydzień wyruszamy do Stalowej Woli, by zmierzyć się z wyzwaniami na "SPACESHIELD Hack", 
+				jednego z największych w Europie hackhatonu łączącego sektor kosmiczny i obronny. 
+				Eksperci z branży przygotowali dla uczestników wyzwania z czterech kategorii: space, defence, dual use oraz open. 
+				Pełne założenia misji poznamy dopiero podczas samego wydarzenia – już nie możemy się doczekać!
+				Hackathon organizowany jest w ramach projektu Space 4 Talents współfinansowanego przez Unię Europejską w ramach Europejskiej Inicjatywy Miejskiej.</p>
+			<a href='https://postimg.cc/TKQbC8PD' target='_blank'><img src='https://i.postimg.cc/Xv6gN4SQ/1a9be282-619b-483b-bb5a-edfe3549f35c.png' border='0' alt='1a9be282-619b-483b-bb5a-edfe3549f35c'/></a><br/><br/>
+
 			<h3><i><u>8.05.2025r.</u></i></h3>
 			<p>Pragniemy przekazać, że nasz kolega inż Paweł Jędryczka w dniu 7.05.2025r. otrzymał I miejsce w konkursie na najlepszą pracę inżynierską 
 			Młodzi innowacyjni 2025, organizowane przez Przemysłowy Instytut Automatyki i Pomiarów PIAP w
 			Warszawie. Gratulujemy naszemu koledze i życzymy dalszych sukcesów.</p>
-			<a href='https://postimg.cc/30FYcXM0' target='_blank'><img src='https://i.postimg.cc/1XLX4BJB/f14.jpg' border='0' alt='f14' style="width: 100%; height: 100%;"/></a>
+			<a href='https://postimg.cc/30FYcXM0' target='_blank'><img src='https://i.postimg.cc/1XLX4BJB/f14.jpg' alt='f14' style="width: 100%; height: 100%;"/></a><br/><br/>
 			<a href="https://postimg.cc/14YDqSmq" target="_blank"><img src="https://i.postimg.cc/15yBbRbJ/c9e6034e-e874-414f-be46-a9e22c052b79.jpg" alt="c9e6034e-e874-414f-be46-a9e22c052b79" style="width: 100%; height: 100%;"/></a><br/><br/>
 			<a href="https://postimg.cc/9r6TLBqX" target="_blank"><img src="https://i.postimg.cc/T3w9Y7db/5660aa23-8a72-4f7e-96ce-cd1fedaf70fb.jpg" alt="5660aa23-8a72-4f7e-96ce-cd1fedaf70fb" style="width: 100%; height: 100%;"/></a><br/><br/>
 			<a href="https://postimg.cc/6y2nVPq1" target="_blank"><img src="https://i.postimg.cc/fT5CsnNZ/ca8d178d-24b5-41f0-9cd3-25c3167aea55.jpg" alt="ca8d178d-24b5-41f0-9cd3-25c3167aea55" style="width: 100%; height: 100%;"/></a><br/><br/>
@@ -283,97 +367,36 @@
 			Podczas wydarzenia mieliśmy okazję zapoznać się ze szczegółową prezentacją nowego sterownika SIMATIC S7-1200 G2 – jego rozszerzonymi możliwościami komunikacyjnymi, zwiększoną wydajnością oraz nowymi funkcjami z zakresu automatyzacji. 
 			Zdobyliśmy cenną wiedzę na temat nowoczesnych rozwiązań z zakresu cyberbezpieczeństwa, realizacji funkcji bezpieczeństwa (safety), nowoczesnych systemów napędowych, robotów mobilnych oraz innowacyjnej aparatury łączeniowej niskiego napięcia. 
 			Oprócz zdobywania nowej wiedzy nawiązaliśmy cenne kontakty, które w przyszłości mogą zaowocować cenną współpracą.</p>
-			<img src="images/f14.jfif" alt="Slide" style="width: 100%; height: 100%;">
-			<img src="images/f15.jfif" alt="Slide" style="width: 100%; height: 100%;">
-			<img src="images/f16.jfif" alt="Slide" style="width: 100%; height: 100%;">
-			<img src="images/f17.jfif" alt="Slide" style="width: 100%; height: 100%;">
+			<img src="images/f14.jfif" alt="Slide" style="width: 100%; height: 100%;"><br/><br/>
+			<img src="images/f15.jfif" alt="Slide" style="width: 100%; height: 100%;"><br/><br/>
+			<img src="images/f16.jfif" alt="Slide" style="width: 100%; height: 100%;"><br/><br/>
+			<img src="images/f17.jfif" alt="Slide" style="width: 100%; height: 100%;"><br/><br/>
 			
 			<h3><i><u>26.03.2025r.</u></i></h3>
 			<p>Ostatnio trochę się nie odzywaliśmy, ale to nie znaczy, że nic nie robimy. 
 			Jeśli chodzi o pracę koła tworzymy dla Was Escape Room na Dzień Elektryka. Dalej pracujemy nad naszym tajnym projektem „kręcioł”. Przygotowaliśmy film zgłoszeniowy do konkursu Czerwonej Róży i wiele innych.</p>
-			<img src="images/f11.jpg" alt="Slide" style="width: 100%; height: 100%;">
-			<img src="images/f12.jpg" alt="Slide" style="width: 100%; height: 100%;">
-			<img src="images/f13.jpg" alt="Slide" style="width: 100%; height: 100%;">
+			<img src="images/f11.jpg" alt="Slide" style="width: 100%; height: 100%;"><br/><br/>
+			<img src="images/f12.jpg" alt="Slide" style="width: 100%; height: 100%;"><br/><br/>
+			<img src="images/f13.jpg" alt="Slide" style="width: 100%; height: 100%;"><br/><br/>
 			
 			<h3><i><u>19.03.2025r.</u></i></h3>			
 			<p>Na ostatnim spotkaniu, planowaliśmy i organizowaliśmy wspólnie stanowiska do Escape Room'u na Dzień Elektryka</p>
-			<img src="images/f9.jpg" alt="Slide" style="width: 100%; height: 100%;">
-			<img src="images/f10.jpg" alt="Slide" style="width: 100%; height: 100%;">
+			<img src="images/f9.jpg" alt="Slide" style="width: 100%; height: 100%;"><br/><br/>
+			<img src="images/f10.jpg" alt="Slide" style="width: 100%; height: 100%;"><br/><br/>
 			
 			<h3><i><u>5.02.2025r.</u></i></h3>			
 			<p>Odbyło się spotkanie, przegłosowany zostały zmiany w statucie. Do kola dołączyli nowi członkowie (aktualnie koło liczy 21 osób), życzymy powodzenia na sesji i do zobaczenia w nowym semestrze😁</p>
-			<img src="images/f2.jpg" alt="Slide" style="width: 100%; height: 100%;">
-			<img src="images/f1.jpg" alt="Slide" style="width: 100%; height: 100%;">  
+			<img src="images/f2.jpg" alt="Slide" style="width: 100%; height: 100%;"><br/><br/>
+			<img src="images/f1.jpg" alt="Slide" style="width: 100%; height: 100%;"><br/><br/>
 			
 			<h3><i><u>19.12.2024r.</u></i></h3>			
 			<p>Koniec ubiegłego tygodnia był dla Nas czasem spotkań. W czwartek odbyła się wigilia Pracowników i przedstawicieli Kół Naukowych Uniwersytet Morski w Gdyni natomiast w piątek odbyła się wigilia Wydziału Elektrycznego Uniwersytetu Morskiego w Gdyni</p>
-			<img src="images/c2.jpg" alt="Slide" style="width: 100%; height: 100%;">			
+			<img src="images/c2.jpg" alt="Slide" style="width: 100%; height: 100%;"><br/><br/>
 			
 			<h3><i><u>13.12.2024r.</u></i></h3>			
 			<p>Nasze koło naukowe zajęło pierwsze miejsce w konkursie organizowanym w ramach Dnia Otwartego!</p>
-			<img src="images/c1.jpg" alt="Slide" style="width: 100%; height: 100%;">
+			<img src="images/c1.jpg" alt="Slide" style="width: 100%; height: 100%;"><br/><br/>
 </article>
-
-				<!-- Karta galeri zdjęć może się kiedyś przyda-->
-<!--			<article id="zd2">
-			<h2 class="major">Zdjęcia stanowiska</h2>
-			<h2 class="major"> Dzień Elektryka 2025 </h2>
-			<h4><a href="#spotkania">Wróć</a></h4>
-			<h6>zdjęcia: inż Paweł Jędryczka</h6>
-			<div class="gallery" id="gallery2"></div>
-			<script>
-				const gallery2 = document.getElementById('gallery2');
-				const totalImages2 = 19; // Liczba zdjęć
-
-				for (let i = 1; i <= totalImages2; i++) {
-					const img = document.createElement('img');
-					img.src = `images/dzienelektryka2025.2/a (${i}).jpg`; // Ścieżka do zdjęć
-					img.alt = `a (${i})`;
-					gallery2.appendChild(img);
-				}
-			</script>
-			<h4><a href="#spotkania">Wróć</a></h4>
-</article>-->
-
-
-			<!-- Karta Jadłospis 
-			<article id="eat">
-			<p></p>
-			
-			<h3/> 23.04.2025r.</h3>			
-			<p>Gofry</p>
-			<img src="images/j7.jpg" alt="Slide" style="width: 100%; height: 100%;">
-			
-			<h3/> 16.04.2025r.</h3>			
-			<p>Hamburgery</p>
-			<img src="images/j6.jpg" alt="Slide" style="width: 100%; height: 100%;"> 
-			
-			<h3>9.04.2025r.</h3>			
-			<p>Naleśniki</p>
-			<img src="images/j4.jpg" alt="Slide" style="width: 100%; height: 100%;"> 
-			
-			<h3>2.04.2025r.</h3>			
-			<p>Tosty</p>
-			<img src="images/j5.jpg" alt="Slide" style="width: 100%; height: 100%;">  
-			
-			<h3>26.03.2025r.</h3>			
-			<p>Hot Dogi</p>
-			<img src="images/j3.jpg" alt="Slide" style="width: 100%; height: 100%;">  
-			
-			<h3>19.03.2025r.</h3>			
-			<p>Nuggetsy i Frytki</p>
-			<img src="images/j2.jpg" alt="Slide" style="width: 100%; height: 100%;">
-			
-			<h3>12.03.2025r.</h3>			
-			<p>Taco's</p>
-			<img src="images/j1.jpg" alt="Slide" style="width: 100%; height: 100%;">
-			
-			<h3>5.03.2025r.</h3>			
-			<p>Kebaby</p>
-			<img src="images/j0.jpg" alt="Slide" style="width: 100%; height: 100%;">				
-			<!-- <p><img src="images/loading.gif" alt="Slide" style="width: 10%; height: 10%;" class="center"></p> -->
-</article>-->
-			
 
 			<!-- Karta Osiągnięcia -->
 			<article id="osiagniecia">
