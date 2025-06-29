@@ -1,5 +1,8 @@
 name: Convert And Compress Images 
 
+permissions:
+  contents: write
+
 on:
   push:
     paths:
