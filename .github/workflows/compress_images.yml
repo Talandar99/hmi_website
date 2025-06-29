@@ -6,7 +6,7 @@ on:
       - 'images/**'
 
 jobs:
-  copy:
+  convert_and_compress:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
